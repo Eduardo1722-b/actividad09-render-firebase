@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: actividad09-arbol-firebase
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: FIREBASE_CREDENTIALS_JSON
+        sync: false
