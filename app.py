@@ -44,9 +44,9 @@ HTML = """
   <p>Ingresa los cinco valores de entrada del modelo.</p>
   <form id="form">
     <label>Edad (Age)</label><input name="Age" type="number" min="1" max="120" value="50" required>
-    <label>Sexo codificado (Sex: 0=M, 1=F según el notebook)</label><input name="Sex" type="number" min="0" max="1" step="1" value="0" required>
+    <label>Sexo codificado (Sex: 0=M, 1=F)</label><input name="Sex" type="number" min="0" max="1" step="1" value="0" required>
     <label>Presión arterial en reposo (RestingBP)</label><input name="RestingBP" type="number" min="0" max="300" value="130" required>
-    <label>Colesterol (Cholesterol)</label><input name="Cholesterol" type="number" min="0" max="1000" value="220" required>
+    <label>Colesterol</label><input name="Cholesterol" type="number" min="0" max="1000" value="220" required>
     <label>Frecuencia cardíaca máxima (MaxHR)</label><input name="MaxHR" type="number" min="0" max="300" value="150" required>
     <button type="submit">Predecir y guardar en Firebase</button>
   </form>
